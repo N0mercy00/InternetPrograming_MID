@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60162140projectMID</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+
+
+        //내용물 반짝일 반짝이
+        var count=0;
+        //내용물 배열 
+        var contentsArray =[
+            {text:'남자란 무엇인가!!!'},
+            {text:'크고 강한 근육질!!!'},
+            {text:'폭팔하는 테스토스 테론!!'}
+        ];
+
+
+        //제이쿼리 사용
+         $(document).ready(function(){
+            $('.title2').text("하체");
+            $('.title3').text("등");
+            $('.title4').text("가슴");
+            $('.title5').text("어깨");
+        //여기까진 잘돌아감 
+
+        //과제 활용 배운거 사용
+            setInterval(function(){
+            
+            $('#blink').html('<p>'+contentsArray[count].text+'</p>');
+            count++;
+            if(count==3){
+                count=0;
+            }
+            setTimeout(function(){
+                $('.blink').empty();
+            },250);
+        },500);
+     });
+
+
+         //자바스크립트 사용
+         function newPage(){
+             window.location.href="https://www.youtube.com/channel/UCuwyPNJScQ5luAV7b8juFfg"
+         }
+
+    </script>
+    <style>
+
+        body {
+            background: -webkit-radial-gradient(rgb(80, 33, 33), rgb(0, 0, 0));
+            background: radial-gradient(rgb(80, 33, 33), rgb(0, 0, 0));
+            
+        }
+
+        h1,p {
+            color: rgba(209, 199, 199, 0.63);
+        }
+        .contentBackground{
+            white-space: nowrap;
+            overflow-x: scroll;
+            
+        }
+        section{
+            vertical-align: top;
+            display: inline-block;
+            margin-top: 20px;
+        /*
+            background-image: url("image/pic01.jpg") ;
+        */
+        
+        background-image: linear-gradient(to right top, #2c2020, #401f1e, #521b1b, #641615, #740d0d);
+
+            background-repeat: no-repeat;
+            width: 380px;
+            height: 500px;
+        }
+
+        img{
+           width: 280px;
+           height: 200px;
+        }
+
+        #go_gang{
+            color: white;
+            background-color: rgba(255, 0, 0, 0.294);
+        }
+        #foot{
+            color: rgba(207, 196, 196, 0.719);
+        }
+        #musicbar{
+           font-size: 3px;
+        }
+        #blink{
+            font-size: 30px;
+            color: white;
+        }
+        strong{
+            color: white;
+        }
+
+    </style>
+</head>
+<!--배경 감싸기 대충 회색-->
+<body>
+
+    <!--컨텐츠 들어갈곳-->
+    <div class ="contentBackground">
+
+        <!--컨텐츠 구분은 섹션으로-->
+        <!--반짝일부분-->
+        <center>
+            <h1 id = "blink">여름! 근육! 남자! </h1>
+        </center>
+
+        <!--메인 소개-->
+        <section class ="section1">
+            <div class = "content1">
+                <center>
+                    <h1 class ="title1">헬린이 탈출하기<br></h1>
+                    <p>이번 여름에는 꼭, 이번 여름에는 꼭<br>의미없는 다짐만 반복해왔지만 이번엔 다르다!<br>쉽게 쉽게 알려주는 프로 보디빌더의 꿀팁 운동법!</p>
+                </center>
+            </div>
+            <div>
+                <center>
+                    <img src="https://www.wallpapertip.com/wmimgs/9-93263_rich-piana-dallas-mccarver.jpg" >
+                    <br>
+                    <br>
+                    <input id="go_gang" type="button" onclick="newPage()" value="강경원 유튜브 바로가기">
+                </center>
+            </div>
+        </section>
+
+
+        <!--하체-->
+        <section class ="section2">
+            <div class = "content2">
+                <center>
+                    <h1 class ="title2">test<br></h1>
+                    <p>운동하는 친구가 가장 많이 하는말!<br>남자라면 하체!! 하지만 그말은 틀렸다!<br>인간이라면 하체! <strong>대지를 지탱하는 강한 대퇴근!!</strong></p>
+                    <iframe width="280" height="200" src="https://www.youtube.com/embed/MWjKQGoNW0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>언제 까지 사시나무 같은 다리를 보일거냐!!!<br>
+                        부모님이 지고 계신 삶의 무게를 아는가??!!<br><br>
+                        부모님이 삶의 무게를 짊어 질 수 있는 이유!!! <br>
+                        그것은 바로 강력한 하체가 있기 때문이 다아ㅏ!!
+                    </p>
+                   
+                  
+                </center>
+            </div>
+        </section>
+
+
+        <!--등-->
+        <section class ="section3">
+            <div class = "content3">
+                <center>
+                    <h1 class ="title3">test<br></h1>
+                    <p>어깨가 커지고 싶어? 당장 파닥파닥 사레리 그만!<br>프레임을 넓히는 가장 쉬운 방법!!<br> <strong>남자가 말하는 방법!! 남자는 등으로 말한다!</strong></p>
+                    <iframe width="280" height="200" src="https://www.youtube.com/embed/tIyfSwFNfuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>미국은 항상 말해왔다 <br>
+                        크고!!! 커다랗고!!! 큰것이 옳다고!!!!<br><br>
+                        너는 지금 너의 사이즈가 만족하는가!!!<br>
+                        넓고 강력한 등!! 그것은 남자의 상징!!!
+                    </p>
+                </center>
+                
+            </div>
+        </section>
+
+
+        <!--가슴-->
+        <section class ="section4">
+            <div class = "content4">
+                <center>
+                    <h1 class ="title4">test<br></h1>
+                    <p>등이 태평양이라면 가슴은 바로 아프리카!<br>큰 대양은 대륙을 품기 위한것!!!<br><strong>남자도 중요하다 가슴!!</strong></p>
+                    <iframe width="280" height="200" src="https://www.youtube.com/embed/9K81DQFutm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>작은 가슴. 정말 그것으로 만족하나? <br>
+                        사나이라면 큰 세상을 품어야 하지 않겠는가!!<br><br>
+                        와라 세상아!! 크고 넓은 내 가슴에 안겨라!!<br>
+                        세상을 향한 사나이의 강력한 외침!! 가슴!!
+                    </p>
+                </center>
+            </div>
+        </section>
+
+
+        <!--어깨-->
+        <section class ="section5">
+            <div class = "content5">
+                <center>
+                    <h1 class ="title5">test<br></h1>
+                    <p>가슴? 등? 하체? 아니<br>옷 벗고 다닐꺼야? 아니잖아!! 어깨!! 그것은<br>옷 입고도 가장 티나는 그부위!! 남자의 로망!</p>
+                    <iframe width="280" height="200" src="https://www.youtube.com/embed/JyAhfMb3FIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>어음..사실 어깨는 별로 잘 안해요<br>
+                        어깨 할 시간에 대근육 위주로 합시다<br><br>
+                        그래도 하면 기분좋아요<br>
+                        가끔 생각나면 찾아와주세요... -어깨올림-
+                    </p>
+                </center>
+            </div>
+        </section>
+
+    </div>
+
+    <center>
+        <br>
+        <p id="musicbar">Click the bar play BGM</p>
+    <iframe width="100" height="10" src="https://www.youtube.com/embed/DTJaQb_-PSk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p id="foot">copyright n0mercy00 <br>MJU 2021 </p>
+    </center>
+    
+</body>
+</html>
